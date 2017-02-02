@@ -1,0 +1,645 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_main.scss */
+body {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: Arial, 'Microsoft YaHei';
+}
+
+/*全局样式*/
+/* line 13, ../sass/_main.scss */
+.rel {
+  position: relative;
+}
+
+/* line 16, ../sass/_main.scss */
+.abs {
+  position: absolute;
+}
+
+/* line 19, ../sass/_main.scss */
+.hide {
+  display: none;
+}
+
+/*头部*/
+/* line 24, ../sass/_main.scss */
+header {
+  background: #FFF;
+}
+/* line 26, ../sass/_main.scss */
+header a {
+  line-height: 34px;
+}
+/* line 29, ../sass/_main.scss */
+header .menu {
+  display: inline-block;
+  font-size: 0.5rem;
+  line-height: 24px;
+  color: #000;
+  position: relative;
+  padding: 0 12px;
+  border-left: 1px solid #ccc;
+}
+/* line 39, ../sass/_main.scss */
+header .icon-cart {
+  margin-right: 12px;
+}
+
+/*消息提示红点*/
+/* line 46, ../sass/_main.scss */
+span i {
+  display: block;
+  background: #f00;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  top: 0px;
+  right: 5px;
+  position: absolute;
+}
+
+/*LOGO*/
+/* line 58, ../sass/_main.scss */
+a .logo {
+  margin-top: 3px;
+  display: block;
+  width: 86px;
+  height: 30px;
+  background: url(../images/logonew.png) center center no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 400px) {
+  /* line 68, ../sass/_main.scss */
+  header a {
+    line-height: 48px;
+  }
+
+  /* line 71, ../sass/_main.scss */
+  a .logo {
+    margin-top: 2px;
+    display: block;
+    width: 106px;
+    height: 44px;
+    background: url(../images/logonew.png) center center no-repeat;
+    background-size: contain;
+  }
+}
+/*微店头图*/
+/* line 82, ../sass/_main.scss */
+.wrap {
+  position: relative;
+}
+/* line 85, ../sass/_main.scss */
+.wrap img {
+  width: 100%;
+}
+/* line 89, ../sass/_main.scss */
+.wrap p {
+  font-size: 0.5rem;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 8px;
+  padding: 4px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/*顶部店铺描述信息*/
+/* line 103, ../sass/_main.scss */
+#index_hd_info_wrap {
+  padding: 0 15px;
+  display: block;
+  background: #FFFFFF;
+}
+
+/* line 111, ../sass/_main.scss */
+.index_hd_abs {
+  padding: 17px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 117, ../sass/_main.scss */
+#avaster {
+  float: left;
+  display: block;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+/* line 125, ../sass/_main.scss */
+#avaster img {
+  display: block;
+  height: 72px;
+  width: auto;
+}
+
+/* line 132, ../sass/_main.scss */
+#index_hd_shop_info {
+  float: left;
+}
+/* line 135, ../sass/_main.scss */
+#index_hd_shop_info #hd_weixin, #index_hd_shop_info #hd_optim {
+  font-size: 0.4rem;
+  color: #707070;
+  line-height: 26px;
+}
+
+/* line 142, ../sass/_main.scss */
+#index_dynamic {
+  text-align: center;
+  position: relative;
+  float: right;
+  font-family: HYQiHei;
+  margin: 10px auto 8px;
+  cursor: pointer;
+  line-height: 43px;
+  padding: 0 8px;
+}
+/* line 151, ../sass/_main.scss */
+#index_dynamic span {
+  border: 1px solid #c31525;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #c31525;
+  width: 60px;
+  height: 25px;
+  line-height: 24px;
+  display: inline-block;
+}
+/* line 161, ../sass/_main.scss */
+#index_dynamic i {
+  display: block;
+  background: #f00;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  top: 0px;
+  right: 5px;
+  position: absolute;
+}
+
+/* line 173, ../sass/_main.scss */
+#index_cert_box {
+  margin: 4px 12px;
+  font-size: 0.4rem;
+  border-bottom: 1px solid #CCCCCC;
+}
+/* line 177, ../sass/_main.scss */
+#index_cert_box a {
+  outline: none;
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 183, ../sass/_main.scss */
+.guarantee-icon {
+  height: 15px;
+  display: inline-block;
+  background-image: url(../images/cert_icon_new.44af0179.png);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 15px;
+  text-align: left;
+  padding-left: 16px;
+  margin-right: 10px;
+}
+
+/* line 199, ../sass/_main.scss */
+.g_danbao {
+  background-position: 0 -36px;
+}
+
+/* line 203, ../sass/_main.scss */
+.g_7days {
+  background-position: 0 -18px;
+}
+
+/* line 206, ../sass/_main.scss */
+.g_taobao {
+  background-position: 0 -104px;
+}
+
+/*一句话描述*/
+/* line 210, ../sass/_main.scss */
+#hd_intro {
+  padding: 12px 12px;
+}
+
+/* line 216, ../sass/_main.scss */
+.card_hd_offset {
+  padding-left: 28px;
+}
+
+/* line 219, ../sass/_main.scss */
+#product-areas .card-header {
+  font-size: 0.4rem;
+  padding: 4px 26px;
+  line-height: 2.4rem;
+}
+/* line 223, ../sass/_main.scss */
+#product-areas .card-header:before {
+  content: "";
+  width: 4px;
+  height: 15px;
+  vertical-align: text-bottom;
+  background-color: #b61426;
+  position: absolute;
+  top: 1rem;
+  left: 0.8rem;
+}
+
+/* line 236, ../sass/_main.scss */
+.card .row {
+  margin-left: 0;
+}
+
+/* line 237, ../sass/_main.scss */
+.card-content-inner {
+  padding: .75rem .75rem .75rem 0;
+  position: relative;
+}
+
+/* line 241, ../sass/_main.scss */
+.card-content-inner figure {
+  overflow: hidden;
+}
+/* line 243, ../sass/_main.scss */
+.card-content-inner figure img {
+  width: 100%;
+}
+/* line 244, ../sass/_main.scss */
+.card-content-inner figure .product_intro {
+  font-size: 0.5rem;
+  line-height: 42px;
+}
+/* line 248, ../sass/_main.scss */
+.card-content-inner figure .product_price {
+  color: #e70751;
+}
+
+/* line 252, ../sass/_main.scss */
+.row .col-50:nth-child(2n+1) {
+  border-right: 1px solid #eaeaea;
+}
+
+/* line 261, ../sass/_main.scss */
+#loadmoreItems {
+  text-align: center;
+  font-size: 0.5rem;
+  color: #b7b7b7;
+  line-height: 1.5rem;
+}
+/* line 266, ../sass/_main.scss */
+#loadmoreItems span {
+  padding: 0 0.2rem;
+}
+
+/* line 271, ../sass/_main.scss */
+#control_btn #control_btn_inner_left {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  overflow: hidden;
+  width: 41%;
+  left: .16rem;
+  float: left;
+}
+
+/* line 282, ../sass/_main.scss */
+#control_btn_inner_left .tab-label {
+  display: block;
+  font-size: 0.4rem;
+  color: #5b5b5b;
+}
+
+/* line 288, ../sass/_main.scss */
+#control_btn #control_btn_inner_right {
+  width: 55%;
+  right: .16rem;
+  top: 0;
+}
+
+/* line 293, ../sass/_main.scss */
+#control_btn #control_btn_inner_left > div {
+  width: 33%;
+  position: relative;
+  float: left;
+}
+
+/*清除icon图标padding值*/
+/* line 299, ../sass/_main.scss */
+#control_btn .icon {
+  padding: 0;
+}
+
+/* line 303, ../sass/_main.scss */
+.button-fav, .button-buy {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  margin: 0.4rem 0.4rem 0.4rem 0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  font-size: 0.4rem;
+  float: right;
+  color: #FFFFFF;
+  cursor: auto;
+}
+/* line 317, ../sass/_main.scss */
+.button-fav:active, .button-buy:active {
+  color: #FFFFFF;
+}
+
+/* line 321, ../sass/_main.scss */
+.button-fav {
+  background: #fb620f;
+}
+
+/* line 324, ../sass/_main.scss */
+.button-buy {
+  background: #dc1967;
+}
+
+/* line 329, ../sass/_main.scss */
+#item_info {
+  background: #fff;
+}
+
+/* line 332, ../sass/_main.scss */
+#item_name {
+  font-size: 18px;
+  padding: .48rem .4rem 0;
+  color: #000;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 2.24rem;
+  word-break: normal;
+}
+
+/* line 344, ../sass/_main.scss */
+#item_price_wrap {
+  padding: .2666666666666667rem 0 0;
+  margin: 0 .4rem;
+  vertical-align: bottom;
+  line-height: .5333333333333333rem;
+}
+
+/* line 351, ../sass/_main.scss */
+.item-price-control {
+  margin-bottom: 15px;
+}
+
+/* line 354, ../sass/_main.scss */
+#seckill_price {
+  color: #f0412f;
+  margin-right: .16rem;
+  font-size: 20px;
+  vertical-align: bottom;
+}
+
+/* line 360, ../sass/_main.scss */
+#item_price {
+  overflow: visible;
+  padding: 0;
+  color: #d73940;
+  font-size: 20px;
+  display: inline-block;
+}
+
+/* line 368, ../sass/_main.scss */
+.promotion-left-icon {
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 2px;
+  vertical-align: top;
+  margin-right: 8px;
+  width: 42px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #f0412f;
+}
+
+/* line 382, ../sass/_main.scss */
+.promotion-right-content {
+  font-size: 12px;
+  color: #737373;
+  display: block;
+  padding-left: 51px;
+}
+
+/* line 388, ../sass/_main.scss */
+#seckill_left {
+  margin-right: .21333333333333335rem;
+}
+
+/* line 391, ../sass/_main.scss */
+#free_delivery {
+  color: #454544;
+}
+
+/* line 394, ../sass/_main.scss */
+.promotion-pannel {
+  margin-top: 6px;
+  position: relative;
+  font-size: 14px;
+  color: #919191;
+  overflow: hidden;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: .6rem 0;
+}
+
+/* line 405, ../sass/_main.scss */
+#express_money_show {
+  font-size: 12px;
+  margin-top: .13333333333333333rem;
+  color: #737373;
+  padding: .6rem 0;
+}
+
+/* line 413, ../sass/_main.scss */
+#guarantee {
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+
+/* line 419, ../sass/_main.scss */
+.guarantee_wrap {
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+/* line 425, ../sass/_main.scss */
+#guarantee:after {
+  width: 7px;
+  height: 7px;
+  top: 17px;
+  right: 12px;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+/* line 433, ../sass/_main.scss */
+#guarantee:after, #invited_em {
+  border-right: 1px solid #5d5d5d;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+/* line 437, ../sass/_main.scss */
+#guarantee:after, #show_controls_arrow {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  content: "";
+}
+
+/* line 444, ../sass/_main.scss */
+.guarantee span.guarantee-new-icon {
+  line-height: 40px;
+  text-indent: 19px;
+  height: auto;
+  background: url(../images/sprite02.png) 0 -300px no-repeat;
+  background-size: 13px;
+}
+
+/* line 451, ../sass/_main.scss */
+.guarantee span {
+  line-height: 24px;
+  height: 24px;
+  font-size: 12px;
+  color: #919191;
+  text-indent: 26px;
+  padding-right: 14px;
+  display: inline-block;
+  float: left;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  margin-bottom: 9px;
+  overflow: hidden;
+}
+
+/* line 80, icon/*.png */
+.icon-sprite, .icon-category, .icon-chat, .icon-collection, .icon-find, .icon-purchase {
+  background-image: url('/images/icon-s1e6f871672.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-category {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-chat {
+  background-position: 0 -32px;
+}
+
+/* line 84, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-collection {
+  background-position: 0 -64px;
+}
+
+/* line 84, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-find {
+  background-position: 0 -96px;
+}
+
+/* line 84, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-purchase {
+  background-position: 0 -124px;
+}
